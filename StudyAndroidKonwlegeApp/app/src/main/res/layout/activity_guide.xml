@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GuideActivity"
+        android:background="@color/cyan">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/vp_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="?attr/actionBarSize"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="?attr/actionBarSize"
+            android:alpha="0.12"
+            android:background="#A8A5A5" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:paddingEnd="15dp"
+            android:paddingRight="15dp">
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:text="跳过"
+                android:textColor="@color/white_70"
+                android:id="@+id/bt_skip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/iv_first"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/indicator_unselected" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:id="@+id/iv_second"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/indicator_unselected" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:id="@+id/iv_third"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:background="@drawable/indicator_unselected" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_next_main"
+                android:text="进入APP"
+                android:textColor="@color/white_70"
+                android:padding="16dp"
+                android:visibility="gone"
+                android:layout_gravity="right|center"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ib_next"
+                android:padding="16dp"
+                android:tint="#ffffff"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_gravity="right|center"
+                android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+        </FrameLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>
