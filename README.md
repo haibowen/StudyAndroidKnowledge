@@ -19,7 +19,7 @@
 
 <table><tr>
 <td><img src="https://github.com/haibowen/StudyAndroidKnowledge/blob/master/icon/Screenshot_20191030-190007_StudyAndroidKonwlegeAp.jpg" width="320" height="657" border=0></td>
-<td><img src="https://github.com/haibowen/JianWen/blob/master/Screenshot_20181206-160644.jpg" width="320" height="657" border=0></td>
+<td><img src="https://github.com/haibowen/StudyAndroidKnowledge/blob/master/icon/Screenshot_20191030-185935_StudyAndroidKonwlegeAp.jpg" width="320" height="657" border=0></td>
 </tr></table>
 
 
